@@ -71,9 +71,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-  &kp N1      &kp N2        &kp N3        &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp N9     &kp EQUAL
-  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RIGHT  &kp BACKSLASH
-  &kp LSHFT   &trans        &trans        &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans     &trans
+  &kp N1      &kp N2        &kp N3        &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS         &kp EQUAL
+  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SINGLE_QUOTE  &kp BACKSLASH
+  &kp LSHFT   &trans        &trans        &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans            &trans
                             &kp LGUI      &trans                &kp SPACE                &kp RET       &kp NUMBER_0  &kp RALT
             >;
         };
