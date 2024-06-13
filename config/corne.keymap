@@ -88,7 +88,7 @@
 
             bindings = <
   &kp EXCL   &kp AT      &kp HASH  &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR
-  &kp LCTRL  &trans      &trans    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH
+  &kp LCTRL  &kp GRAVE   &trans    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH
   &kp LSHFT  &doubletap  &trans    &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE
                          &kp LGUI  &trans                &kp SPACE                &kp RET    &trans     &kp RALT
             >;
@@ -96,10 +96,10 @@
 
         layer_3 {
             bindings = <
-  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_PRV     &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN      &trans     &trans
-  &trans      &trans        &trans        &trans        &bt BT_NXT   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans &trans
-  &trans      &trans        &trans        &trans        &trans        &trans    &trans          &trans          &trans           &trans
-                            &trans        &trans        &trans        &mkp MB1  &mkp MB2        &mkp MB3
+  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_PRV    &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &trans  &trans
+  &trans      &trans        &trans        &trans        &bt BT_NXT    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+  &trans      &trans        &trans        &trans        &trans        &trans          &trans          &trans           &trans  &trans
+                            &trans        &trans        &trans        &mkp MB1        &mkp MB2        &mkp MB3
             >;
         };
     };
