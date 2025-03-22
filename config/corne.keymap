@@ -74,7 +74,7 @@
             bindings = <
   &trans     &trans          &kp UP_ARROW    &kp LEFT_BRACE    &kp RIGHT_BRACE          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS         &kp EQUAL
   &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT         &kp RIGHT_PARENTHESIS    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SINGLE_QUOTE  &kp BACKSLASH
-  &kp LSHFT  &trans          &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans            &trans
+  &kp LSHFT  &trans          &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp GRAVE         &trans
                              &kp LGUI        &trans            &kp SPACE                &kp RET       &kp NUMBER_0  &kp RALT
             >;
         };
