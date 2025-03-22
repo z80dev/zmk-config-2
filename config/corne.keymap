@@ -31,15 +31,13 @@
         doubletap: doubletap {
             compatible = "zmk,behavior-tap-dance";
             label = "DOUBLETAP";
-            #binding-cells = <0>;
             bindings = <&kp X>, <&kp LA(X)>;
+            #binding-cells = <0>;
         };
-
         motap: motap {
             compatible = "zmk,behavior-hold-tap";
             label = "MOTAP";
             bindings = <&mo>, <&kp>;
-
             #binding-cells = <2>;
             tapping-term-ms = <500>;
             flavor = "tap-preferred";
@@ -50,57 +48,58 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // -----------------------------------------------------------------------------------------
+                        // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-  &kp Q           &kp W           &kp E             &kp R        &kp T        &kp Y        &kp U          &kp I              &kp O       &mt LALT P
-  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &lt 3 G      &mt RCTRL H        &mt RIGHT_SHIFT J    &mt LALT K  &mt RIGHT_GUI L  &kp SEMICOLON
-  &kp Z           &kp X           &kp C             &kp V        &kp B        &kp N        &kp M          &kp COMMA          &kp DOT     &mt RCTRL FSLH
-                                  &kp LGUI          &kp SPACE    &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &mt LALT ENTER
+  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &mt LALT P  
+  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &lt 3 G  &mt RCTRL H  &mt RIGHT_SHIFT J  &mt LALT K  &mt RIGHT_GUI L  &kp SEMICOLON  
+  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &mt RCTRL FSLH  
+  &kp LGUI  &kp SPACE  &lt 1 TAB  &lt 2 ENTER  &kp BACKSPACE  &mt LALT ENTER  
             >;
         };
 
         lower_layer {
-            // -----------------------------------------------------------------------------------------
+                        // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-  &trans     &trans          &kp UP_ARROW    &kp LEFT_BRACE    &kp RIGHT_BRACE          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS         &kp EQUAL
-  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT         &kp RIGHT_PARENTHESIS    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SINGLE_QUOTE  &kp BACKSLASH
-  &kp LSHFT  &trans          &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp GRAVE         &trans
-                             &kp LGUI        &trans            &kp SPACE                &kp RET       &kp NUMBER_0  &kp RALT
+  &trans  &trans  &kp UP_ARROW  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &kp EQUAL  
+  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp RIGHT_PARENTHESIS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SINGLE_QUOTE  &kp BACKSLASH  
+  &kp LSHFT  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp GRAVE  &trans  
+  &kp LGUI  &trans  &kp SPACE  &kp RET  &kp NUMBER_0  &kp RALT  
             >;
         };
 
         raise_layer {
-            // -----------------------------------------------------------------------------------------
+                        // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |    |  `   |
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-  &kp EXCL   &kp AT      &kp HASH  &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR
-  &kp LCTRL  &kp GRAVE   &trans    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH
-  &kp LSHFT  &doubletap  &trans    &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE
-                         &kp LGUI  &trans                &kp SPACE                &kp RET    &trans     &kp RALT
+  &kp EXCL  &kp AT  &kp HASH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  
+  &kp LCTRL  &kp GRAVE  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  
+  &kp LSHFT  &doubletap  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  
+  &kp LGUI  &trans  &kp SPACE  &kp RET  &trans  &kp RALT  
             >;
         };
 
         layer_3 {
             bindings = <
-  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_PRV    &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &trans  &trans
-  &trans      &trans        &trans        &trans        &bt BT_NXT    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-  &trans      &trans        &trans        &trans        &trans        &trans          &trans          &trans           &trans  &trans
-                            &trans        &trans        &trans        &mkp MB1        &mkp MB2        &mkp MB3
+  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_PRV  &msc MOVE_UP  &mmv MOVE_UP  &msc MOVE_DOWN  &trans  &trans  
+  &trans  &trans  &trans  &trans  &bt BT_NXT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans  
+  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+  &trans  &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  
             >;
         };
+
     };
 };
