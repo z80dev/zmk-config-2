@@ -29,7 +29,7 @@
         combo_emacs_esc {
             timeout-ms = <50>;
             key-positions = <1 2>;
-            bindings = <&kp LC(g)>;
+            bindings = <&kp LC(G)>;
         };
     };
 
