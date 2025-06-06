@@ -47,7 +47,7 @@
             label = "STICKYCTRL";
             bindings = <&sk LCTRL>, <&kp LC(C)>;
             #binding-cells = <0>;
-        }
+        };
 
         superthumb: superthumb {
             compatible = "zmk,behavior-tap-dance";
