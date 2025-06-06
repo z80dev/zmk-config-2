@@ -26,11 +26,12 @@
             bindings = <&gresc>;
         };
 
-        combo_emacs_esc {
+        combo_caps {
             timeout-ms = <50>;
-            key-positions = <1 2>;
-            bindings = <&kp LC(G)>;
+            key-positions = <12 16>;
+            bindings = <&caps_word>;
         };
+
     };
 
     behaviors {
@@ -38,9 +39,15 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DOUBLETAP";
             bindings = <&kp X>, <&kp LA(X)>;
-
             #binding-cells = <0>;
         };
+
+        stickyctrl: stickyctrl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "STICKYCTRL";
+            bindings = <&sk LCTRL>, <&kp LC(C)>;
+            #binding-cells = <0>;
+        }
 
         superthumb: superthumb {
             compatible = "zmk,behavior-tap-dance";
@@ -50,15 +57,6 @@
             #binding-cells = <0>;
         };
 
-        motap: motap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MOTAP";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <500>;
-            flavor = "tap-preferred";
-        };
     };
 
     keymap {
