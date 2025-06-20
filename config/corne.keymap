@@ -89,7 +89,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-  &kp Q           &lt 4 W         &kp E             &kp R        &kp T        &kp Y        &kp U              &kp I                &kp O            &mt LALT P
+  &kp Q           &lt 4 W         &kp E             &kp R        &kp T        &kp Y        &kp U              &kp I                &lt 5 O          &mt LALT P
   &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &lt 3 G      &kp H        &mt RCTRL J        &mt RIGHT_SHIFT K    &mt LALT L       &mt RIGHT_GUI SEMICOLON
   &kp Z           &kp X           &kp C             &kp V        &kp B        &kp N        &kp M              &kp COMMA            &kp DOT          &mt RCTRL FSLH
                                   &superthumb         &kp TAB    &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE      &superthumb
@@ -141,6 +141,15 @@
   &trans  &trans  &trans         &trans         &trans                  &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &trans  &trans
   &trans  &trans  &trans         &trans         &trans                  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &trans  &trans
                   &trans         &trans         &trans                  &trans      &kp LG(N0)  &trans
+            >;
+        };
+
+        emacs_layer {
+            bindings = <
+  &trans  &trans              &kp LA(UP)        &trans              &trans        &trans  &trans  &trans  &trans  &trans
+  &trans  &kp LA(LEFT)        &kp LA(DOWN)      &kp LA(RIGHT)       &trans        &trans  &trans  &trans  &trans  &trans
+  &trans  &trans              &trans            &trans              &trans        &trans  &trans  &trans  &trans  &trans
+                              &trans            &trans              &trans        &trans  &trans  &trans
             >;
         };
     };
