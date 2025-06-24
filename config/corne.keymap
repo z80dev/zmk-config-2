@@ -91,7 +91,7 @@
             bindings = <
   &kp Q           &lt 4 W         &kp E             &kp R        &kp T        &kp Y        &kp U              &kp I                &lt 5 O          &mt LALT P
   &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &lt 3 G      &kp H        &mt RCTRL J        &mt RIGHT_SHIFT K    &mt LALT L       &mt RIGHT_GUI SEMICOLON
-  &kp Z           &kp X           &kp C             &kp V        &kp B        &kp N        &kp M              &kp COMMA            &kp DOT          &mt RCTRL FSLH
+  &kp Z           &mt LC(LS(LA(LGUI))) X           &kp C             &kp V        &kp B        &kp N        &kp M              &kp COMMA            &kp DOT          &mt RCTRL FSLH
                                   &superthumb         &kp TAB    &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE      &superthumb
             >;
         };
@@ -121,7 +121,7 @@
             bindings = <
   &kp EXCL   &kp AT      &kp HASH  &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR
   &kp LCTRL  &kp GRAVE   &trans    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH
-  &kp LSHFT  &doubletap  &trans    &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE
+  &kp LSHFT  &trans      &trans    &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE
                          &kp LGUI  &trans                &kp SPACE                &kp RET    &trans     &kp RALT
             >;
         };
